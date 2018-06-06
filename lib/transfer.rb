@@ -6,4 +6,18 @@ class Transfer
     @receiver = receiver
     @status = "pending"
     @amount = amount
+  end
+
+  def valid?
+    @sender.valid?
+    @receiver.valid?
+  end
+
+  def execute_transaction
+    @sender -= @amount
+    @receiver += @amount
+  end
+
+  def
+    
 end
