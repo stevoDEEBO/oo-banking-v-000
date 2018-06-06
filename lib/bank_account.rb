@@ -17,10 +17,10 @@ class BankAccount
   end
 
   def valid?
-    return true if self.balance == 0 || self.status == "closed"
+    return true if self.balance != 0 || self.status != "closed"
   end
 
   def close_account
-
+    
   end
 end
