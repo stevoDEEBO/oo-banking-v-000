@@ -21,6 +21,7 @@ class Transfer
     else
       puts "Transaction rejected. Please check your account balance."
       @status = "rejected"
+    end
   end
 
   def
